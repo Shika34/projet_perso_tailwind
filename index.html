@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>BUSY BAR - Landing Page</title>
+  </head>
+
+  <body>
+    <!--video-->
+    <video
+      src="src/assets/welcome.mp4"
+      autoplay
+      loop
+      muted
+      class="absolute -z-10 object-cover w-full h-full"
+    ></video>
+
+    <main class="container mx-auto min-h-screen flex flex-col">
+      <header class="flex items-center justify-between pt-5">
+        <!-- menu -->
+        <nav>
+          <ul class="flex gap-5 text-gray-500">
+            <li>Busy Bar</li>
+            <li class="underline"><a href="#">Boutique</a></li>
+            <li class="underline"><a href="#">Telechargements</a></li>
+            <li class="underline"><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <!-- Badge -->
+        <a href="#">
+          <img
+            src="/src/assets/badge.svg"
+            alt="badge"
+            class="w-52 not-hover:grayscale-100 duration-200 hover:translate-2"
+          />
+        </a>
+      </header>
+      <!-- corps -->
+      <section
+        class="flex items-center flex-col mx-auto max-w-[550px] text-xl mt-[40vh] grow"
+      >
+        <p class="ml-15">
+          <span class="font-bold">BUSY BAR</span> Bla Bla BlaBlaBla Bla Bla Bla
+          Bla BlaBla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla
+        </p>
+        <button
+          class="text-white bg-orange-500 px-14 py-4 rounded-lg hover:bg-black duration-600 cursor-pointer mx-auto block mt-10"
+        >
+          Acheter
+        </button>
+      </section>
+      <!-- fonctionnalités -->
+      <section
+        class="grid grid-cols-1 gap-5 pb-5 opacity-80 md:grid-cols-2 xl:grid-cols-4 mt-32 md:mt-0"
+      >
+        <div class="flex items-start gap-3">
+          <img src="/src/assets/feature-one.svg" alt="fct 1" />
+          <div>
+            <h3 class="text-xl mb-1.5">Outil de productivité</h3>
+            <p class="text-sm">nanani nanana</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <img src="/src/assets/feature-two.svg" alt="fct 1" class="w-14" />
+          <div>
+            <h3 class="text-xl mb-1.5">Outil de productivité</h3>
+            <div class="text-sm">nanani nanana</div>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <img src="/src/assets/feature-three.svg" alt="fct 2" class="w-14" />
+          <div>
+            <h3 class="text-xl mb-1.5">Outil de productivité</h3>
+            <div class="text-sm">nanani nanana</div>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <img src="/src/assets/feature-four.svg" alt="fct 3" class="w-14" />
+          <div>
+            <h3 class="text-xl mb-1.5">Outil de productivité</h3>
+            <div class="text-sm">nanani nanana</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--demo-->
+    <section class="flex h-screen">
+      <!--description-->
+      <div class="w-1/2 flex items-center">
+        <div>
+          <h2 class="text-5xl">Montrez que vous êtes occupé</h2>
+          <p class="text-xl mt-5">
+            Empêchez les autres d'interrompre votre concentration profonde
+          </p>
+          <div class="flex items-end mt-10">
+            <img
+              src="/src/assets/demo-one.png"
+              alt="demo une"
+              class="w-32 h-32 object-contain"
+            />
+          
+          <div>
+            <h3 class="text-xl">Activation instantanée</h3>
+            <div class="text-sm">Activez et désactivez blabla blabla</div>
+          </div>
+        </div>
+        <div class="flex items-end mt-5">
+            <img
+              src="/src/assets/demo-two.png"
+              alt="demo une"
+              class="w-32 h-32 object-contain"
+            />
+          
+          <div>
+            <h3 class="text-xl">Set timer</h3>
+            <div class="text-sm">Configuez la durée de votre absence bla bla bla</div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--video-->
+      <div class="w-1/2 relative">
+        <video
+          src="src/assets/busy.mp4"
+          autoplay
+          loop
+          muted
+          class="absolute -z-10 object-cover w-full h-screen"
+        ></video>
+      </div>
+    </section>
+  </body>
+</html>
